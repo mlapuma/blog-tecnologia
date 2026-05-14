@@ -1,83 +1,83 @@
 const articles = [
   {
-    title: "Java atual: linguagem, JVM e o que mudou na pratica",
+    title: "Java atual: linguagem, JVM e o que mudou na prática",
     category: "Java",
-    level: "Intermediario",
+    level: "Intermediário",
     read: "12 min",
     summary:
-      "Uma leitura guiada sobre evolucao do Java, releases, recursos modernos, compatibilidade e como decidir quando migrar.",
+      "Uma leitura guiada sobre a evolução do Java, releases, recursos modernos, compatibilidade e como decidir quando migrar.",
     tags: ["JVM", "LTS", "records", "virtual threads"],
   },
   {
-    title: "Spring Boot sem piloto automatico",
+    title: "Spring Boot sem piloto automático",
     category: "Java",
-    level: "Avancado",
+    level: "Avançado",
     read: "15 min",
     summary:
-      "Como usar Spring Boot com criterio: boundaries, configuracao, observabilidade, testes e boas decisoes de arquitetura.",
+      "Como usar Spring Boot com critério: boundaries, configuração, observabilidade, testes e boas decisões de arquitetura.",
     tags: ["Spring", "APIs", "testes", "observabilidade"],
   },
   {
     title: "Arquitetura moderna para sistemas que precisam crescer",
     category: "Arquitetura",
-    level: "Avancado",
+    level: "Avançado",
     read: "14 min",
     summary:
-      "Comparativo pratico entre modular monolith, microservicos, eventos, mensageria e trade-offs de distribuicao.",
-    tags: ["DDD", "eventos", "microservicos"],
+      "Comparativo prático entre modular monolith, microsserviços, eventos, mensageria e trade-offs de distribuição.",
+    tags: ["DDD", "eventos", "microsserviços"],
   },
   {
     title: "Cloud native: do deploy ao desenho operacional",
     category: "Cloud",
-    level: "Intermediario",
+    level: "Intermediário",
     read: "10 min",
     summary:
-      "Containers, Kubernetes, serverless, custos, confiabilidade e como pensar operacao antes do primeiro deploy.",
+      "Containers, Kubernetes, serverless, custos, confiabilidade e como pensar a operação antes do primeiro deploy.",
     tags: ["Kubernetes", "containers", "SRE"],
   },
   {
     title: "IA generativa no fluxo de desenvolvimento",
     category: "IA",
-    level: "Intermediario",
+    level: "Intermediário",
     read: "9 min",
     summary:
-      "Boas praticas para usar IA com revisao tecnica, seguranca, qualidade de codigo e produtividade sustentavel.",
-    tags: ["LLM", "prompts", "revisao"],
+      "Boas práticas para usar IA com revisão técnica, segurança, qualidade de código e produtividade sustentável.",
+    tags: ["LLM", "prompts", "revisão"],
   },
   {
     title: "Frontend resiliente: acessibilidade, estado e performance",
     category: "Frontend",
-    level: "Intermediario",
+    level: "Intermediário",
     read: "11 min",
     summary:
-      "Como construir interfaces responsivas, acessiveis e rapidas usando componentes, design system e metricas reais.",
+      "Como construir interfaces responsivas, acessíveis e rápidas usando componentes, design system e métricas reais.",
     tags: ["UX", "a11y", "performance"],
   },
   {
-    title: "Seguranca para quem escreve codigo todos os dias",
-    category: "Seguranca",
+    title: "Segurança para quem escreve código todos os dias",
+    category: "Segurança",
     level: "Essencial",
     read: "13 min",
     summary:
-      "OWASP, autenticacao, autorizacao, secrets, dependencia segura e revisoes que evitam problemas de producao.",
+      "OWASP, autenticação, autorização, secrets, dependência segura e revisões que evitam problemas de produção.",
     tags: ["OWASP", "auth", "secrets"],
   },
   {
-    title: "Metodos, APIs e exemplos: como transformar conceito em implementacao",
-    category: "Boas praticas",
+    title: "Métodos, APIs e exemplos: como transformar conceito em implementação",
+    category: "Boas práticas",
     level: "Essencial",
     read: "8 min",
     summary:
-      "Modelo editorial para publicar tutoriais com contexto, codigo, explicacao de metodo e alternativas de implementacao.",
-    tags: ["codigo", "metodos", "tutorial"],
+      "Modelo editorial para publicar tutoriais com contexto, código, explicação de método e alternativas de implementação.",
+    tags: ["código", "métodos", "tutorial"],
   },
   {
-    title: "Banco de dados para aplicacoes modernas",
+    title: "Banco de dados para aplicações modernas",
     category: "Dados",
-    level: "Intermediario",
+    level: "Intermediário",
     read: "10 min",
     summary:
-      "Modelagem, indices, transacoes, consistencia, cache e criterios para escolher SQL, NoSQL ou busca especializada.",
+      "Modelagem, índices, transações, consistência, cache e critérios para escolher SQL, NoSQL ou busca especializada.",
     tags: ["SQL", "NoSQL", "cache"],
   },
 ];
@@ -87,52 +87,52 @@ const categories = ["Todos", ...new Set(articles.map((article) => article.catego
 const javaTopics = [
   {
     phase: "Fundamentos",
-    title: "Sintaxe, OOP e colecoes",
+    title: "Sintaxe, OOP e coleções",
     text: "Classes, interfaces, generics, streams, exceptions, imutabilidade e modelagem limpa.",
   },
   {
     phase: "JVM",
-    title: "Memoria, GC e performance",
-    text: "Heap, threads, profiling, garbage collectors, tuning e leitura de metricas de runtime.",
+    title: "Memória, GC e performance",
+    text: "Heap, threads, profiling, garbage collectors, tuning e leitura de métricas de runtime.",
   },
   {
     phase: "Frameworks",
     title: "Spring, Quarkus, Micronaut e Jakarta EE",
-    text: "Quando usar cada stack, como comparar ecossistemas e como evitar acoplamento desnecessario.",
+    text: "Quando usar cada stack, como comparar ecossistemas e como evitar acoplamento desnecessário.",
   },
   {
     phase: "Arquitetura",
-    title: "APIs, eventos e sistemas distribuidos",
-    text: "REST, mensageria, resiliencia, contratos, modularizacao, DDD e integracao entre servicos.",
+    title: "APIs, eventos e sistemas distribuídos",
+    text: "REST, mensageria, resiliência, contratos, modularização, DDD e integração entre serviços.",
   },
   {
     phase: "Qualidade",
-    title: "Testes, seguranca e observabilidade",
-    text: "JUnit, Testcontainers, logs estruturados, tracing, metricas, seguranca de dependencias e CI.",
+    title: "Testes, segurança e observabilidade",
+    text: "JUnit, Testcontainers, logs estruturados, tracing, métricas, segurança de dependências e CI.",
   },
   {
     phase: "Java atual",
-    title: "Evolucao continua",
-    text: "Releases semestrais, versoes LTS, virtual threads, pattern matching, records e migracoes seguras.",
+    title: "Evolução contínua",
+    text: "Releases semestrais, versões LTS, virtual threads, pattern matching, records e migrações seguras.",
   },
 ];
 
 const prompts = [
-  "Atualizar uma trilha com as mudancas mais recentes de uma versao LTS e explicar o impacto em projetos reais.",
-  "Criar um artigo comparando dois frameworks da mesma tecnologia com criterios de adocao, manutencao e custo.",
-  "Publicar um guia de implementacao com problema, contexto, codigo, testes, trade-offs e erros comuns.",
-  "Revisar uma boa pratica popular e mostrar quando ela ajuda, quando atrapalha e como aplicar com criterio.",
+  "Atualizar uma trilha com as mudanças mais recentes de uma versão LTS e explicar o impacto em projetos reais.",
+  "Criar um artigo comparando dois frameworks da mesma tecnologia com critérios de adoção, manutenção e custo.",
+  "Publicar um guia de implementação com problema, contexto, código, testes, trade-offs e erros comuns.",
+  "Revisar uma boa prática popular e mostrar quando ela ajuda, quando atrapalha e como aplicar com critério.",
   "Montar uma pauta de arquitetura conectando linguagem, framework, banco de dados, deploy e observabilidade.",
-  "Atualizar o radar de seguranca com uma vulnerabilidade, uma prevencao pratica e uma checklist para times.",
+  "Atualizar o radar de segurança com uma vulnerabilidade, uma prevenção prática e uma checklist para times.",
   "Criar um roteiro de estudos semanal para profissionais que precisam se atualizar sem perder foco.",
 ];
 
 const calendar = [
-  ["Seg", "Fundamentos e evolucao"],
-  ["Ter", "Boas praticas e codigo"],
+  ["Seg", "Fundamentos e evolução"],
+  ["Ter", "Boas práticas e código"],
   ["Qua", "Frameworks e ecossistema"],
   ["Qui", "Arquitetura e cloud"],
-  ["Sex", "Seguranca e qualidade"],
+  ["Sex", "Segurança e qualidade"],
   ["Sab", "IA, produtividade e carreira"],
   ["Dom", "Curadoria e plano da semana"],
 ];
@@ -184,7 +184,7 @@ function renderArticles() {
                 </div>
                 <div class="meta">
                   <span>${article.read}</span>
-                  <span>Guia pratico</span>
+                  <span>Guia prático</span>
                 </div>
               </div>
             </article>
